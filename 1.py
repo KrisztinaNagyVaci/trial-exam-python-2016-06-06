@@ -7,9 +7,11 @@ examplestring = 'hollywood'
 
 
 def listElementDoubler(listInput):
-    outputList = []
-    for i in listInput:
-        outputList.append(i * 2)
-    return outputList
-
-print(listElementDoubler(exampleList))
+    if isinstance(listInput, list):
+        outputList = []
+        for i in listInput:
+            outputList.append(i * 2)
+        return outputList
+    else:
+        return 'The parameter is not a list'
+print(listElementDoubler(examplestring))

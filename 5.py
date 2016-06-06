@@ -16,5 +16,5 @@ def woodenleggedPirates(input):
         if i['has_wooden_leg'] == True:
             if i['gold'] > 15:
                 listOfNames = listOfNames + [i['Name']]
-    print (listOfNames)
-woodenleggedPirates(pirates)
+    return listOfNames
+print(woodenleggedPirates(pirates))
