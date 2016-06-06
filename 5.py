@@ -10,11 +10,11 @@ pirates = [
 # And returns a list of names containing the pirates that has wooden leg and
 # more than 15 gold
 
-def woodenleggedPirates(input):
+def richWoodenleggedPirates(input):
     listOfNames = []
     for i in input:
         if i['has_wooden_leg'] == True:
             if i['gold'] > 15:
                 listOfNames = listOfNames + [i['Name']]
     return listOfNames
-print(woodenleggedPirates(pirates))
+print(richWoodenleggedPirates(pirates))
